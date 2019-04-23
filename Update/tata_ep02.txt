@@ -81,7 +81,9 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawSceneWithMask("black", "down", 0, 0, 1300 );
-	PlaySE( 3, "wa_038", 128, 64 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlaySE( 3, "wa_038", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlaySE( 3, "Original\wa_038", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlaySE( 3, "April2019Update\wa_038", 128, 64 ); }
 
 //　...ガチャリ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -89,7 +91,9 @@ void main()
 		   NULL, "...Click.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys13", 128, 0 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlayBGM( 1, "msys13", 128, 0 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlayBGM( 1, "Original\msys13", 128, 0 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlayBGM( 1, "April2019Update\msys13", 128, 0 ); }
 
 //「.........何だか録音されてると思うと、すごくしゃべりにくいですね。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -301,7 +305,9 @@ void main()
 		   NULL, "(For a little while, Keiichi Maebara mutters the word \"impossible\" several times.)", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys21", 128, 0 );
+	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys21", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys21", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys21", 128, 0 ); }
 
 //「...どうして、...ありえないと？＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1142,14 +1148,18 @@ void main()
 
 	DrawScene("black", 10000 );
 	FadeOutBGM( 1, 1000, TRUE );
-	PlaySE( 3, "wa_037", 128, 64 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlaySE( 3, "wa_037", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlaySE( 3, "Original\wa_037", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlaySE( 3, "April2019Update\wa_037", 128, 64 ); }
 
 	Wait( 3000 );
 
 //if %kaisou_mode = 1 goto *kaisou_mode
 
 	DrawScene("white", 100 );
-	PlaySE( 3, "wa_036", 128, 64 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlaySE( 3, "wa_036", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlaySE( 3, "Original\wa_036", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlaySE( 3, "April2019Update\wa_036", 128, 64 ); }
 	DrawScene("end_2", 4000 );
 //lsph 21,":c;bmp\Efe\End_2.bmp",0,0
 //vsp 21,1
@@ -1170,7 +1180,9 @@ void main()
 
 	DrawSceneWithMask("s_jump_back", "4", 0, 0, 1000 );
 //bg ":c;BMP\Efe\Omake_Haikei.bmp",18,1500,":c;BMP\Efe\4.bmp"
-	PlaySE( 3, "wa_041", 128, 64 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlaySE( 3, "wa_041", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlaySE( 3, "Original\wa_041", 128, 64 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlaySE( 3, "April2019Update\wa_041", 128, 64 ); }
 	DrawSceneWithMask("ex_otsu_tata", "5", 0, 0, 1000 );
 //bg ":c;BMP\Efe\Omake_Otukaresama3.BMP",18,1500,":c;BMP\Efe\5.bmp"
 

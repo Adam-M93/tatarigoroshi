@@ -9,7 +9,9 @@ void main()
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, TRUE );
 
-	PlayBGM( 2, "lsys17", 128, 0 );
+	if (GetGlobalFlag(GAltSEflow) == 0) { 	PlayBGM( 2, "lsys17", 128, 0 ); }
+	if (GetGlobalFlag(GAltSEflow) == 1) { 	PlayBGM( 2, "Original\lsys17", 128, 0 ); }
+	if (GetGlobalFlag(GAltSEflow) == 2) { 	PlayBGM( 2, "April2019Update\lsys17", 128, 0 ); }
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
@@ -36,7 +38,9 @@ void main()
 		   NULL, "\"Err... the fire department!\"", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "msys15", 128, 0 );
+	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys15", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys15", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys15", 128, 0 ); }
 
 //「火事ですか、事故ですか＠　落ち着いて話してください。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>救急情報センター</color>", NULL, "<color=#f5e6d3>Emergency Center</color>", NULL, Line_ContinueAfterTyping); }
@@ -154,7 +158,9 @@ void main()
 
 
 
-	PlayBGM( 1, "msys08", 128, 0 );
+	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys08", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys08", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys08", 128, 0 ); }
 
 //「わ、...わ！＠　まま、間違いねぇよ！＠　これ、人だよ！＠　ひぇえぇええ......！！￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>団員</color>", NULL, "<color=#f5e6d3>Group Member</color>", NULL, Line_ContinueAfterTyping); }
