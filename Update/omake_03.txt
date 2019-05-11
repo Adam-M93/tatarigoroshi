@@ -676,9 +676,10 @@ void main()
 	OutputLine(NULL, "　あの、申し訳ないんだけど、音楽を変えてもらってもいいかしら？",
 		   NULL, " Oh, excuse me, could you change the music please?", Line_WaitForInput);
 
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys21", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys21", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys21", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys21", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys21", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys21", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys21", 128, 0 ); }
 
 //　もう少しミステリアスな感じの＠/
 	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900131", 128, TRUE);

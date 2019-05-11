@@ -11,9 +11,10 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 
 
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys21", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys21", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys21", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys21", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys21", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys21", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys21", 128, 0 ); }
 
 //locate 5,7
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 7 ); }

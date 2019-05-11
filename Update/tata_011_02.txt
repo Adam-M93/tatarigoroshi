@@ -9,9 +9,10 @@ void main()
 	FadeOutBGM( 2, 1000, TRUE );
 	DisableWindow();
 	DrawSceneWithMask("background/g1_01", "left", 0, 0, 300 );
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys24", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
 
 //　学校には誰もいなかった￥
 	ClearMessage();
@@ -3058,9 +3059,10 @@ void main()
 		   NULL, " ...Now is the time to be cold as ice.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys24", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
 
 //　...死体を埋めなければ＠.........だが、......ここはどこだろう￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

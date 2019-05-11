@@ -24,6 +24,8 @@ void BrandLogo()
 	
 	ModCallScriptSection("&sound", "MusicQuestion");
 	
+	ModCallScriptSection("&sound", "ItaloQuestion");
+	
 	ModCallScriptSection("&sound", "SoundEffectQuestion");
 	
 	ModCallScriptSection("&sound", "SoundAskAgain");

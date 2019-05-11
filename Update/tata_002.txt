@@ -7028,9 +7028,10 @@ void main()
 
 
 	DisableWindow();
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys26", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys26", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys26", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys26", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys26", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys26", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys26", 128, 0 ); }
 	ModDrawCharacter(2, 4, "sprite/night/sa1a_hau_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 400, TRUE );
 
 //「...いえ＠本当にどこまでも、にーにーに似てますのね＠圭一さん。＠

@@ -27,9 +27,10 @@ void main()
 		   NULL, "...The fireworks I heard before noon were probably to announce the opening of the festival.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys24", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys24", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys24", 128, 0 ); }
 
 //　その日は...祭り日和とはお世辞にも言えない、曇天だった＠
 //　テレビの天気予報は、夕方から夜半にかけて土砂降りになるかもしれないと警告していた＠......だが、今が降っていない以上、祭りは開催される＠
@@ -814,9 +815,10 @@ void main()
 
 	DisableWindow();
 	DrawScene("black", 3000 );
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys27", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys27", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys27", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys27", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys27", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys27", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys27", 128, 0 ); }
 	FadeOutBGM( 2, 1000, TRUE );
 
 //　昔から特に身体的に優れていたわけじゃない＠
@@ -1235,9 +1237,10 @@ void main()
 	DisableWindow();
 	FadeOutBGM( 2, 1000, TRUE );
 	DrawScene("background/g2", 400 );
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys26", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys26", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys26", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys26", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys26", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys26", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys26", 128, 0 ); }
 
 //　転校しての第一日目＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

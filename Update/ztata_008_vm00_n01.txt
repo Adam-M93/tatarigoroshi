@@ -147,9 +147,10 @@ void dialog012()
 	ModDrawCharacter(3, 4, "sprite/sunset/sa1a_muhyou_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
 	DrawSceneWithMask("background/ho1_02", "up", 0, 0, 300 );
 
-	if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys18", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys18", 128, 0 ); }
-	if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys18", 128, 0 ); }
+	if (GetGlobalFlag(GAltBGM) == 1) { 	PlayBGM( 1, "ItaloRemakes\msys18", 200, 0 ); 
+		else if (GetGlobalFlag(GAltBGMflow) == 0) { 	PlayBGM( 1, "msys18", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 1) { 	PlayBGM( 1, "Original\msys18", 128, 0 ); }
+		else if (GetGlobalFlag(GAltBGMflow) == 2) { 	PlayBGM( 1, "April2019Update\msys18", 128, 0 ); }
 
 //「............階段で転んだ時にちょっと打っただけですのよ＠気になさらないで下さいませ。＠
 //「.........う、...嘘だろ...！！＠
